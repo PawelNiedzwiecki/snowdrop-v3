@@ -11,6 +11,7 @@ A professional, responsive portfolio website for makeup artists built with React
 - 🧪 Comprehensive test coverage with Vitest
 - 📦 TypeScript for type safety
 - 🎯 SEO-friendly structure
+- 🚀 Automated CI/CD with GitHub Actions
 
 ## Pages
 
@@ -113,6 +114,37 @@ npm test -- --watch
 # Generate coverage report
 npm run test:coverage
 ```
+
+## CI/CD Pipeline
+
+This project uses GitHub Actions for automated testing, building, and deployment.
+
+### Workflows
+
+1. **CI Workflow** - Runs on every push and PR
+   - Tests on Node.js 18.x and 20.x
+   - Runs all tests
+   - Builds production site
+   - Uploads build artifacts
+
+2. **Deploy Workflow** - Deploys to GitHub Pages
+   - Triggers on push to main/master
+   - Can be manually triggered
+   - Deploys built site to GitHub Pages
+
+3. **PR Checks** - Validates pull requests
+   - Runs tests with coverage
+   - Reports build size
+   - Comments on PR with status
+
+### Setup GitHub Pages Deployment
+
+1. Go to repository **Settings → Pages**
+2. Under "Build and deployment", select **GitHub Actions**
+3. Push to main/master branch to trigger deployment
+4. Site will be available at: `https://YOUR_USERNAME.github.io/YOUR_REPO`
+
+For detailed documentation, see [.github/GITHUB_ACTIONS.md](.github/GITHUB_ACTIONS.md)
 
 ## License
 
