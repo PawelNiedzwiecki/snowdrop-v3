@@ -12,13 +12,15 @@
 }
 
 .not-found-title {
-  font-size: 8rem;
-  font-weight: bold;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  font-family: 'Playfair Display', serif;
+  font-size: 9rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--rose-gold) 50%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
 }
 
 .not-found-content h2 {
