@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Layout from '../components/Layout';
 import type { HeadFC, PageProps } from 'gatsby';
+import type React from 'react';
+import { useState } from 'react';
+import Layout from '../components/Layout';
 import './contact.css';
 
 const ContactPage: React.FC<PageProps> = () => {
@@ -13,7 +14,9 @@ const ContactPage: React.FC<PageProps> = () => {
     message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -49,8 +52,8 @@ const ContactPage: React.FC<PageProps> = () => {
             <div className="contact-info">
               <h2>Get in Touch</h2>
               <p>
-                I'd love to hear from you! Whether you're interested in booking a service
-                or just have a question, feel free to reach out.
+                I'd love to hear from you! Whether you're interested in booking a service or just
+                have a question, feel free to reach out.
               </p>
 
               <div className="contact-details">
@@ -91,13 +94,28 @@ const ContactPage: React.FC<PageProps> = () => {
               <div className="social-connect">
                 <h3>Follow Me</h3>
                 <div className="social-links">
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
                     Instagram
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
                     Facebook
                   </a>
-                  <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="social-link">
+                  <a
+                    href="https://pinterest.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
                     Pinterest
                   </a>
                 </div>
@@ -200,6 +218,9 @@ export default ContactPage;
 export const Head: HeadFC = () => (
   <>
     <title>Contact - Makeup Artist Portfolio</title>
-    <meta name="description" content="Get in touch to book a consultation or ask about our makeup artistry services. Available for weddings, events, and photo shoots." />
+    <meta
+      name="description"
+      content="Get in touch to book a consultation or ask about our makeup artistry services. Available for weddings, events, and photo shoots."
+    />
   </>
 );

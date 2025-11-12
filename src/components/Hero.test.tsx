@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 import Hero from './Hero';
 
 describe('Hero', () => {
@@ -10,7 +10,9 @@ describe('Hero', () => {
 
   it('renders the hero subtitle', () => {
     render(<Hero />);
-    expect(screen.getByText(/Professional makeup artistry for every occasion/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/Professional makeup artistry for every occasion/i)
+    ).toBeInTheDocument();
   });
 
   it('renders call-to-action buttons', () => {

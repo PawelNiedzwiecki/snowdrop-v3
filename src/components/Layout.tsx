@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'gatsby';
+import React from 'react';
 import '../styles/global.css';
 import './Layout.css';
 
@@ -24,6 +24,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <span className="logo-text">Makeup Artistry</span>
               </Link>
               <button
+                type="button"
                 className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
@@ -33,11 +34,31 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <span></span>
               </button>
               <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                <li><Link to="/" activeClassName="active-link">Home</Link></li>
-                <li><Link to="/gallery" activeClassName="active-link">Gallery</Link></li>
-                <li><Link to="/services" activeClassName="active-link">Services</Link></li>
-                <li><Link to="/about" activeClassName="active-link">About</Link></li>
-                <li><Link to="/contact" activeClassName="active-link">Contact</Link></li>
+                <li>
+                  <Link to="/" activeClassName="active-link">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/gallery" activeClassName="active-link">
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/services" activeClassName="active-link">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" activeClassName="active-link">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" activeClassName="active-link">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -54,18 +75,32 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="footer-section">
               <h4>Quick Links</h4>
               <ul>
-                <li><Link to="/gallery">Gallery</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <li>
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
               </ul>
             </div>
             <div className="footer-section">
               <h4>Connect</h4>
               <div className="social-links">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                  Instagram
+                </a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                  Facebook
+                </a>
+                <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+                  Pinterest
+                </a>
               </div>
             </div>
           </div>

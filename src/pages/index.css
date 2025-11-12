@@ -31,14 +31,19 @@
 }
 
 .cta-section {
-  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--mocha) 50%, var(--primary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--mocha) 50%,
+    var(--primary-color) 100%
+  );
   color: var(--light-color);
   position: relative;
   overflow: hidden;
 }
 
 .cta-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -57,7 +62,7 @@
 }
 
 .cta-content h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: var(--light-color);
   font-size: 2.75rem;
   margin-bottom: 1.5rem;
@@ -66,7 +71,7 @@
 }
 
 .cta-content p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
   color: rgba(255, 248, 240, 0.95);

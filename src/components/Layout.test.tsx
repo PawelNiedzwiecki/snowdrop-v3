@@ -1,5 +1,5 @@
-import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
+import { describe, expect, it } from 'vitest';
 import Layout from './Layout';
 
 describe('Layout', () => {
@@ -49,7 +49,9 @@ describe('Layout', () => {
     );
 
     const currentYear = new Date().getFullYear();
-    expect(screen.getByText(`© ${currentYear} Makeup Artistry. All rights reserved.`)).toBeInTheDocument();
+    expect(
+      screen.getByText(`© ${currentYear} Makeup Artistry. All rights reserved.`)
+    ).toBeInTheDocument();
   });
 
   it('renders footer sections', () => {

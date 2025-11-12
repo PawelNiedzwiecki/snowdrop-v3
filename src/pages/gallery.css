@@ -1,5 +1,10 @@
 .page-header {
-  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--mocha) 50%, var(--primary-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary-color) 0%,
+    var(--mocha) 50%,
+    var(--primary-color) 100%
+  );
   color: var(--light-color);
   padding: 5.5rem 0 3.5rem;
   text-align: center;
@@ -8,7 +13,7 @@
 }
 
 .page-header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +24,7 @@
 }
 
 .page-header h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: var(--light-color);
   font-size: 3.25rem;
   margin-bottom: 1.25rem;
@@ -30,7 +35,7 @@
 }
 
 .page-header p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: rgba(255, 248, 240, 0.9);
   position: relative;
@@ -47,7 +52,7 @@
 }
 
 .filter-btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0.85rem 2.25rem;
   background: #ffffff;
   border: 2px solid var(--primary-color);
