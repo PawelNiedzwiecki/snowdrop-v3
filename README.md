@@ -65,6 +65,21 @@ npm run clean
 - `npm run test:ui` - Run tests with UI
 - `npm run test:coverage` - Generate test coverage report
 - `npm run clean` - Clean Gatsby cache
+- `npm run lint` - Check code for linting issues with Biome
+- `npm run lint:fix` - Fix linting issues with Biome
+- `npm run format` - Format code with Biome
+- `npm run check` - Format and lint code with Biome (with fixes)
+- `npm run ci` - CI mode - check formatting and linting without fixes
+
+## Code Quality
+
+This project uses [Biome](https://biomejs.dev/) for linting and formatting:
+
+- **Formatting**: 2-space indentation, single quotes, semicolons, 100 character line width
+- **Linting**: Comprehensive rules for TypeScript, React, and accessibility
+- **Import Organization**: Automatically sorts and organizes imports
+
+Run `npm run check` before committing to ensure code quality.
 
 ## Project Structure
 
