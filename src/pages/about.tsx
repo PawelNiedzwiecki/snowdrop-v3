@@ -1,7 +1,7 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import { Link } from 'gatsby';
 import type { HeadFC, PageProps } from 'gatsby';
+import { Link } from 'gatsby';
+import type React from 'react';
+import Layout from '../components/Layout';
 import './about.css';
 
 const AboutPage: React.FC<PageProps> = () => {
@@ -25,15 +25,14 @@ const AboutPage: React.FC<PageProps> = () => {
             <div className="about-text">
               <h2>Hi, I'm Your Makeup Artist</h2>
               <p>
-                With over 10 years of professional experience in the beauty industry,
-                I've had the privilege of working with hundreds of clients, helping them
-                look and feel their absolute best for their most important moments.
+                With over 10 years of professional experience in the beauty industry, I've had the
+                privilege of working with hundreds of clients, helping them look and feel their
+                absolute best for their most important moments.
               </p>
               <p>
-                My passion for makeup artistry began at a young age, and I've since
-                trained with some of the industry's leading professionals. I specialize
-                in creating looks that enhance your natural beauty while ensuring you
-                feel confident and radiant.
+                My passion for makeup artistry began at a young age, and I've since trained with
+                some of the industry's leading professionals. I specialize in creating looks that
+                enhance your natural beauty while ensuring you feel confident and radiant.
               </p>
             </div>
           </div>
@@ -41,9 +40,9 @@ const AboutPage: React.FC<PageProps> = () => {
           <div className="about-philosophy">
             <h2>My Philosophy</h2>
             <p>
-              I believe that makeup should enhance, not mask, your natural beauty. Every face
-              is unique, and I take the time to understand your features, preferences, and the
-              occasion to create a customized look that's perfect for you.
+              I believe that makeup should enhance, not mask, your natural beauty. Every face is
+              unique, and I take the time to understand your features, preferences, and the occasion
+              to create a customized look that's perfect for you.
             </p>
           </div>
 
@@ -98,7 +97,9 @@ const AboutPage: React.FC<PageProps> = () => {
           <div className="about-cta">
             <h2>Let's Create Something Beautiful</h2>
             <p>Ready to book your appointment or have questions? I'd love to hear from you!</p>
-            <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
+            <Link to="/contact" className="btn btn-primary">
+              Get in Touch
+            </Link>
           </div>
         </div>
       </section>
@@ -111,6 +112,9 @@ export default AboutPage;
 export const Head: HeadFC = () => (
   <>
     <title>About - Makeup Artist Portfolio</title>
-    <meta name="description" content="Learn about our professional makeup artist with 10+ years of experience in bridal, editorial, and special event makeup." />
+    <meta
+      name="description"
+      content="Learn about our professional makeup artist with 10+ years of experience in bridal, editorial, and special event makeup."
+    />
   </>
 );

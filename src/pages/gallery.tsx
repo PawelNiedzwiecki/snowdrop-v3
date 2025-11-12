@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import Layout from '../components/Layout';
-import GalleryItem from '../components/GalleryItem';
 import type { HeadFC, PageProps } from 'gatsby';
+import type React from 'react';
+import { useState } from 'react';
+import GalleryItem from '../components/GalleryItem';
+import Layout from '../components/Layout';
 import './gallery.css';
 
 const GalleryPage: React.FC<PageProps> = () => {
@@ -30,9 +31,10 @@ const GalleryPage: React.FC<PageProps> = () => {
     { id: 'natural', label: 'Natural' },
   ];
 
-  const filteredItems = activeFilter === 'all'
-    ? galleryItems
-    : galleryItems.filter(item => item.category === activeFilter);
+  const filteredItems =
+    activeFilter === 'all'
+      ? galleryItems
+      : galleryItems.filter((item) => item.category === activeFilter);
 
   return (
     <Layout>
@@ -46,8 +48,9 @@ const GalleryPage: React.FC<PageProps> = () => {
       <section className="section">
         <div className="container">
           <div className="gallery-filters">
-            {categories.map(category => (
+            {categories.map((category) => (
               <button
+                type="button"
                 key={category.id}
                 className={`filter-btn ${activeFilter === category.id ? 'active' : ''}`}
                 onClick={() => setActiveFilter(category.id)}
@@ -58,9 +61,9 @@ const GalleryPage: React.FC<PageProps> = () => {
           </div>
 
           <div className="gallery-grid">
-            {filteredItems.map((item, index) => (
+            {filteredItems.map((item) => (
               <GalleryItem
-                key={index}
+                key={item.title}
                 title={item.title}
                 category={item.category}
                 imageUrl={item.imageUrl}
@@ -78,6 +81,9 @@ export default GalleryPage;
 export const Head: HeadFC = () => (
   <>
     <title>Gallery - Makeup Artist Portfolio</title>
-    <meta name="description" content="Browse through our collection of makeup artistry work including bridal, events, and editorial makeup." />
+    <meta
+      name="description"
+      content="Browse through our collection of makeup artistry work including bridal, events, and editorial makeup."
+    />
   </>
 );

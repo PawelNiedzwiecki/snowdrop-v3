@@ -14,7 +14,7 @@
 }
 
 .service-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@
 }
 
 .service-title {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   color: var(--dark-color);
   margin-bottom: 1.25rem;
   font-size: 1.5rem;
@@ -51,7 +51,7 @@
 }
 
 .service-description {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--text-light);
   flex-grow: 1;
   line-height: 1.8;
@@ -60,7 +60,7 @@
 
 .service-price {
   margin-top: 2rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--primary-color);
